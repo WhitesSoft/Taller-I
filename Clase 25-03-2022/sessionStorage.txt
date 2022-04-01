@@ -1,0 +1,61 @@
+function agregar() {
+    var name, correo, estudiante, nuevo;
+
+    name = document.getElementById("name").value;
+    correo = document.getElementById("correo").value;
+
+    // estudiante = document.getElementsByTagName("section")[0];
+    
+    // nuevo = document.createElement("article");
+    // nuevo.innerText = name+"---"+correo;
+
+    // estudiante.appendChild(nuevo);
+
+    sessionStorage.setItem(name, correo);
+}
+
+function eliminar(){
+    // padre = document.getElementsByTagName("section")[0];
+    // estudiante = padre.getElementsByTagName("article");
+    // estudiante = estudiante[estudiante.length-1];
+    // padre.removeChild(estudiante);
+
+    sessionStorage.removeItem(sessionStorage.key(sessionStorage.length-1));
+    mostrar();
+}
+
+function limpiar(){
+    // padre = document.getElementsByTagName("section")[0];
+    // estudiante = padre.getElementsByTagName("article");
+    
+    // for(const i = 0; i < estudiante.length;){
+    //     padre.removeChild(estudiante[i]);
+    // }
+    sessionStorage.clear();
+    mostrar();
+}
+
+function mostrar(){
+    var cajadatos = document.getElementById("cajadatos");
+    cajadatos.innerHTML = "";
+    for(var i = 0; i < sessionStorage.length; i++){
+        var clave = sessionStorage.key(i);
+        var valor = sessionStorage.getItem(clave);
+
+        cajadatos.innerHTML += "<tr><td>" + clave + "</td><td>" +valor+ "</td></tr>";
+    }
+}
+
+function iniciar() {
+
+    document.getElementById("btnAdd").onclick = agregar;
+
+    document.getElementById("btnRemove").onclick = eliminar;
+
+    document.getElementById("btnClear").onclick = limpiar;
+
+    var btn = document.getElementById("btnAdd")
+    btn.addEventListener("click", mostrar, false)
+}
+
+window.onload = iniciar;

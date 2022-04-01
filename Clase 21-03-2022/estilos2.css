@@ -1,0 +1,14 @@
+.positivo {
+    color: blue;
+    text-shadow: 1px 1px yellowgreen;
+}
+
+.negativo {
+    color: red;
+    text-shadow: 1px 1px blue;
+    font-size: large;
+}
+
+section{
+    background-color: aquamarine;
+}

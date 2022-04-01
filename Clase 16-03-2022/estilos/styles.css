@@ -1,0 +1,61 @@
+h1{
+   color:  red;
+   background-color: aqua;
+}
+
+h3{
+    color: white;
+    background-color: brown;
+    opacity: 1;
+}
+
+h3:hover{
+    transform: translate(10px);
+}
+
+a{
+    text-decoration: overline;
+    color: brown;
+}
+
+a:hover{
+    transform: scale(2);
+}
+
+header{
+    color: rebeccapurple;
+    background-color: aqua;
+}
+
+body{
+    background-color: burlywood;
+}
+
+li{
+    display: inline-flex;
+    text-shadow: 1px, 1px, 2px, black;
+}
+
+li:hover{
+    color: white;
+}
+
+section{
+    display: block;
+    float: left;
+    border: 5px;
+    border-style: dotted;
+    box-shadow: 60px -16px, rebeccapurple;
+    background: rebeccapurple;
+}
+
+aside{
+    float: right;
+}
+
+footer{
+    background-color: yellow;
+    clear: both;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

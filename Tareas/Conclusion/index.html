@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nasa</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="./app.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="#" class="enlace">
+                <img src="./recursos/logo.png" class="logo">
+            </a>
+
+            <ul>
+                <li><a href="#" id="home">INICIO</a></li>
+                <li><a href="#" id="registro">REGISTRAR PLANETA</a></li>
+                <li><a href="#" id="lista">PLANETAS</a></li>
+            </ul>
+        </nav>
+
+        <section id="sec">
+            <div class="padre" id="padre">
+                La definición oficial de la Unión Astronómica Internacional
+                establece que un planeta es un cuerpo celeste que: (a) orbita
+                alrededor del Sol, (b) posee suficiente masa como para que su
+                propia gravedad domine las fuerzas presentes como cuerpo rígido,
+                lo que implica una forma aproximadamente redondeada determinada
+                por el equilibrio hidrostático, (c) es el objeto claramente
+                dominante en su vecindad, habiendo limpiado su órbita de cuerpos
+                similares a él.
+            </div>
+            
+
+            <div class="contenedorTabla" id="contenedorTabla">
+
+                <div class="hijo" id="hijo">
+                    Registre su planeta en la base de datos.
+                </div>
+
+                <table class="tabla" id="tabla">
+                    <thead>
+                        <tr>
+                            <th>Nombre del planeta</th>
+                            <th>Fecha descubierta</th>
+                            <th>Eliminar</th>
+                        </tr>
+
+                    </thead>
+                    <tbody id="cajadatos">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+        </section>
+
+        <aside id="as">
+            <div class="cuadro">
+                <form>
+
+                    <label class="labels" for="name">Nombre del planeta:</label>
+                    <input class="campos" type="text" id="name">
+
+                    <label class="labels" for="correo">Fecha descubierta:</label>
+                    <input class="campos" type="date" id="fecha">
+
+                    <br>
+
+                    <input class="btns" type="button" value="Agregar"
+                        id="btnAdd">
+
+                </form>
+            </div>
+        </aside>
+    </body>
+</html>

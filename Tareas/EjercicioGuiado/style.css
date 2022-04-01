@@ -1,0 +1,50 @@
+h1{
+    background: -webkit-linear-gradient(top, rgb(175, 20, 59), #0cf);
+    width: 50%;
+    border-radius: 10px;
+    margin: 15px auto;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+body{
+    background: rgb(98, 211, 240);
+}
+
+section{
+    width: 100%;
+    border-top: 1px dashed #999;
+    margin: 15px auto;
+}
+
+figure{
+    float: left;
+}
+
+figure img{
+    padding: 4px;
+    background: #666;
+    border-radius: 20px;
+    transition: -webkit-transform 0.9s ease-in-out 0.1s;
+    box-shadow: #666 5px 5px 10px;
+
+    background-color: rgb(175, 20, 59);
+}
+
+figure img:hover{
+    transform: scale(1, 1.5);
+}
+
+figcaption{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer{
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}

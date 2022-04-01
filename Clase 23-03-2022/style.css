@@ -1,0 +1,85 @@
+header{
+    background: -webkit-linear-gradient(top, rgb(175, 20, 59), #0cf);
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+body{
+    background-color: aqua;
+ }
+
+form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    
+}
+
+
+.btns{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 150px;
+}
+
+
+
+section{
+    width: 70%;
+    background-color: aqua;
+    margin: auto;
+    margin-top: -270px;
+    display: block;
+    float: left;
+    border: 5px;
+    border-style: solid;
+}
+
+section article{
+    background-color: burlywood;
+    width: auto;
+    margin: 10px;
+    float: left;
+}
+
+aside{
+    width: 20%;
+    float: right;
+    border: 25px;
+    border-style: solid;
+    margin: auto;
+    margin-top: -270px;
+    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+figure{
+    float: left;
+    margin: 5px;
+    
+}
+
+
+
+footer{
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}

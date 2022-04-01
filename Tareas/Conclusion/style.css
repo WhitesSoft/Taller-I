@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: url(./recursos/fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 120px);
+}
+
+nav{
+    background: black;
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 30px;
+}
+
+.logo {
+    height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 120px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 7px 15px;
+}
+
+li a.enlace, li a:hover {
+    background: rgb(126, 35, 116);
+    transform: .5s;
+}
+
+section{
+    float: left;
+    width: 100%;
+    border: 5px;
+}
+
+.padre {
+    height: calc(100vh - 120px);
+    padding: 50px;
+    display: flex;
+    font-size: 30px;
+    color: wheat;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo{
+    color: wheat;
+    font-size: 25px;
+    display: none;
+}
+
+
+aside{
+    display: none;
+}
+
+.cuadro{
+    margin-top: 20%;
+    width: 90%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    padding: 50px 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.labels{
+    font-size: 20px;
+    color: wheat;
+}
+
+.campos{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: wheat;
+}
+
+.btns{
+    width: 100%;
+    background: rgb(126, 35, 116);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contenedorTabla{
+    width: 40%;
+    margin: auto;
+    padding: 30px 30px;
+    margin-top: 10%;
+    background: rgba(2, 2, 2, 0.5);
+    border-radius: 10px;
+    justify-content: center;
+    display: none;
+}
+
+.tabla{
+    display: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.tabla th{
+    padding-left: 30px;
+}
+
+
+.tabla tbody{
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding-left: 30px;
+    border-spacing: 5px;
+}
