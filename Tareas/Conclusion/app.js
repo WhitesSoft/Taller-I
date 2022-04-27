@@ -41,10 +41,6 @@ function menuRegistro(){
     contenedorTabla.style.marginTop = "16%";
 
 
-    // contenedortTabla.style.color = "white";
-    // contenedortTabla.style.fontSize = "60px";
-    // contenedortTabla.innerText = "Registre su planete en la base de datos.";
-
     tabla.style.display = "none";
 }
 
@@ -68,8 +64,6 @@ function menuPlaneta(){
     contenedor.style.display = "flex";
     contenedor.style.width = "40%";
     contenedor.style.marginTop = "8%";
-    // contenedor.style.fontSize = "auto";
-    // contenedor.innerText = "";
 
     table.style.display = "table";
 
